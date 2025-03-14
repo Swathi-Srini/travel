@@ -1,0 +1,82 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    background-color: #420909;
+    color: #04f2ffe0;
+    line-height: 1.6;
+    background: url('back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #2701ff;
+    z-index: 1000;
+}
+
+.about-header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.about-header nav ul li {
+    margin: 0 15px;
+}
+
+.about-header nav ul li a {
+    text-decoration: none;
+    color: #08fc51f9;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.about-header nav ul li a:hover {
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #cdf0fe;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

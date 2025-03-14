@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Lighter background color */
+    color: #333; /* Darker text color for better contrast */
+    line-height: 1.6;
+    background: url('back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.contact-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3); /* Lighter overlay */
+    z-index: 1;
+}
+
+.contact-page header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #4a90e2; /* Brighter header color */
+    z-index: 1000;
+}
+
+.contact-page nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.contact-page nav ul li {
+    margin: 0 15px;
+}
+
+.contact-page nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Brighter link color */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-page nav ul li a:hover {
+    color: #ffcc00; /* Bright hover color */
+}
+
+.contact-page main {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-page h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff9900; /* Brighter heading color */
+}
+
+.contact-page .contact-details {
+    background: rgba(255, 255, 255, 0.8); /* Lighter background for contact details */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333; /* Darker label color for contrast */
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4a90e2; /* Brighter border color */
+    background-color: #ffffff; /* White background for inputs */
+    color: #333; /* Darker text color for inputs */
+    margin-bottom: 15px;
+}
+
+.contact-page button {
+    background-color: #ff5722; /* Brighter button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+.contact-page footer {
+    background-color: #333; /* Dark footer color */
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}

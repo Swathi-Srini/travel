@@ -1,0 +1,118 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body, .home {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background: url('back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Background overlay for faded effect */
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed for a darker overlay */
+    z-index: 1;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for the header */
+    z-index: 10;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f6fa1b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    max-width: 600px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #f7f71e;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: #f6f8dc;
+    margin-bottom: 40px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFA500;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}

@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Page Container */
+.destination-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 120px; /* Add space below app header */
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.destination-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+}
+
+.destination-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.destination-header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.destination-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('back1.jpg') no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Genres Section */
+.genres-section {
+  margin-bottom: 30px;
+  text-align: center; /* Center-align the entire section */
+}
+
+.genres-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.genre-checkboxes {
+  display: flex;
+  justify-content: center; /* Center-align the checkboxes */
+  flex-wrap: wrap;
+  gap: 20px; /* Add more space between checkboxes */
+}
+
+.genre-checkbox label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem; /* Increase the font size */
+  cursor: pointer;
+  color: yellow; /* Yellow text color */
+  padding: 10px 20px; /* Add padding inside the box */
+  background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  border-radius: 8px; /* Rounded corners for the box */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add hover effects */
+}
+
+.genre-checkbox label:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Glow effect on hover */
+}
+
+.genre-checkbox input {
+  margin-right: 15px; /* Increase spacing between checkbox and label */
+  transform: scale(1.5); /* Make the checkbox larger */
+}
+
+/* Spots Section */
+.spots-section {
+  margin-top: 20px;
+}
+
+.spots-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.spots-list {
+  list-style: none;
+  padding: 0;
+}
+
+.spots-list li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.spots-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.spots-list h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.spots-list p {
+  font-size: 1rem;
+  margin: 10px 0 0;
+  color: #666;
+}
+
+/* No Spots Message */
+.no-spots-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 20px;
+}
